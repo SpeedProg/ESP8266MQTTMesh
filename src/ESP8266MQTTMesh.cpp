@@ -590,7 +590,7 @@ void ESP8266MQTTMesh::setup_AP() {
     if (AP_ready)
         return;
     
-    uint octet3 = WiFi.gatewayIP()[2] + 1;
+    uint octet3 = WiFi.gatewayIP()[2] + 2;
     if (! octet3) {
         octet3++;
     }
